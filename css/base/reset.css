@@ -133,3 +133,9 @@ html {
   font-family: sans-serif;
   box-sizing: border-box;
 }
+
+body {
+  font-family: "Alata";
+  font-size: 0.93rem;
+  background-color: #ffecfd;
+}

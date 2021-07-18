@@ -1,3 +1,7 @@
 @import "./base/reset.css";
-@import "./base/typography.css";
-@import "./utils/utilities.css";
+@import "./utils/variables.css";
+@import "./layout/header.css";
+@import "./layout/navigation.css";
+@import "./components/components.css";
+@import "./layout/mainbody.css";
+@import "./layout/footer.css";

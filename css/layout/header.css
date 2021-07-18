@@ -1,0 +1,21 @@
+header {
+  background: url(../../images/mobile/image-hero.jpg) center/cover;
+  height: 41rem;
+  position: relative;
+}
+.header-wrapper {
+  width: var(--mobile-width);
+  margin: 0 auto;
+}
+
+.header-info {
+  position: absolute;
+  bottom: 30%;
+  text-transform: uppercase;
+  color: var(--White);
+  font-family: var(--josefin-sans);
+  font-size: 2.8rem;
+  border: 2px solid white;
+  width: 80%;
+  padding: 1rem;
+}
