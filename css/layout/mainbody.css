@@ -11,6 +11,7 @@ main img {
 main h2 {
   text-transform: uppercase;
   margin: 1.5rem 0;
+  font-family: var(--josefin-sans);
 }
 
 .desktop {
@@ -84,7 +85,7 @@ main h2 {
   text-align: center;
   width: 50%;
   margin: 2rem auto;
-  border: 1px solid;
+  border: 2px solid var(--Very-Dark-Gray);
   font-size: 1.3rem;
   padding: 0.8rem;
   letter-spacing: 0.5rem;
@@ -135,30 +136,43 @@ main h2 {
   }
   .creations-seeall {
     position: absolute;
-    top: -1.8rem;
+    top: -3rem;
     right: -3rem;
     width: 40%;
   }
-  main h2 {
+  .creations-header h2 {
     text-align: initial;
+  }
+  .creations-seeall h3 {
+    width: 40%;
   }
 }
 
 /* media query for interactive */
 @media (min-width: 929px) {
   .interactive-sec {
-    flex-direction: row;
+    display: block;
+    position: relative;
   }
   .interactive-sec__img {
-    flex-basis: 125rem;
+    width: 65%;
   }
   .interactive-sec__info {
-    align-self: flex-end;
-    text-align: start;
-    margin: 1rem;
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    right: -2rem;
+    text-align: left;
   }
   .interactive-sec__info p {
     padding: 0;
+    font-size: 1.05rem;
+  }
+}
+
+@media (min-width: 929px) and (max-width: 1010px) {
+  .interactive-sec__img {
+    width: 50%;
   }
 }
 
@@ -166,21 +180,4 @@ main h2 {
   .creations-images .desktop {
     grid-template-columns: repeat(4, 1fr);
   }
-}
-
-@media (min-width: 1039px) {
-  /* .interactive-sec {
-    position: relative;
-  }
-  .interactive-sec__img {
-    width: 50%;
-  }
-  .interactive-sec__info {
-    position: absolute;
-    width: 50%;
-  } */
-  /* .interactive-sec__info p {
-    font-size: 0.7rem;
-    line-height: 4;
-  } */
 }
