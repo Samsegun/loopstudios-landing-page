@@ -1,21 +1,55 @@
 header {
   background: url(../../images/mobile/image-hero.jpg) center/cover;
-  height: 41rem;
-  position: relative;
 }
+
 .header-wrapper {
   width: var(--mobile-width);
+  min-height: 41rem;
   margin: 0 auto;
+  position: relative;
 }
 
 .header-info {
+  width: 84%;
   position: absolute;
-  bottom: 30%;
-  text-transform: uppercase;
+  bottom: 225px;
   color: var(--White);
+  text-transform: uppercase;
   font-family: var(--josefin-sans);
-  font-size: 2.8rem;
-  border: 2px solid white;
-  width: 80%;
-  padding: 1rem;
+  font-size: 2.5rem;
+  padding: 1rem 1.6rem;
+  border: 2px solid var(--White);
+}
+
+@media (min-width: 535px) {
+  .header-info {
+    line-height: 1.2;
+    font-size: 2.7rem;
+  }
+}
+
+@media (min-width: 929px) {
+  header {
+    background: url(../../images/desktop/image-hero.jpg) left 0 top 0 / contain
+      no-repeat;
+    margin-bottom: -10rem;
+  }
+  .header-wrapper {
+    width: var(--desktop-width);
+    min-height: 41rem;
+  }
+  .header-info {
+    margin-bottom: 3rem;
+    width: 50%;
+  }
+}
+
+@media (min-width: 1029px) {
+  header {
+    margin-bottom: -3rem;
+  }
+
+  .header-info {
+    margin-bottom: 0;
+  }
 }

@@ -28,7 +28,7 @@ main h2 {
 }
 
 .interactive-sec__info {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
 }
@@ -38,6 +38,7 @@ main h2 {
 }
 
 .interactive-sec__info p {
+  padding: 0 2rem;
   line-height: 1.5;
   color: var(--Very-Dark-Gray);
 }
@@ -49,10 +50,8 @@ main h2 {
 }
 
 .creations-images .mobile {
-  height: 70rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  display: grid;
+  gap: 1.5rem;
 }
 
 .creations-images__img {
@@ -84,7 +83,7 @@ main h2 {
   text-transform: uppercase;
   text-align: center;
   width: 50%;
-  margin: 1rem auto;
+  margin: 2rem auto;
   border: 1px solid;
   font-size: 1.3rem;
   padding: 0.8rem;
@@ -94,4 +93,76 @@ main h2 {
 .creations-seeall h3 a {
   text-decoration: none;
   color: inherit;
+}
+
+@media (min-width: 672px) {
+  main {
+    width: 80%;
+  }
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: block;
+  }
+  .interactive-sec__img .desktop {
+    clip-path: polygon(
+      0% 0%,
+      100% 0%,
+      100% 34%,
+      78% 34%,
+      78% 100%,
+      46% 100%,
+      0 100%
+    );
+  }
+  .creations-images .mobile {
+    display: none;
+  }
+  .creations-images .desktop {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+}
+
+/* media query for interactive */
+@media (min-width: 929px) {
+  .interactive-sec {
+    flex-direction: row;
+  }
+  .interactive-sec__img {
+    flex-basis: 125rem;
+  }
+  .interactive-sec__info {
+    align-self: flex-end;
+    text-align: start;
+    margin: 1rem;
+  }
+  .interactive-sec__info p {
+    padding: 0;
+  }
+}
+
+@media (min-width: 960px) {
+  .creations-images .desktop {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1039px) {
+  /* .interactive-sec {
+    position: relative;
+  }
+  .interactive-sec__img {
+    width: 50%;
+  }
+  .interactive-sec__info {
+    position: absolute;
+    width: 50%;
+  } */
+  /* .interactive-sec__info p {
+    font-size: 0.7rem;
+    line-height: 4;
+  } */
 }

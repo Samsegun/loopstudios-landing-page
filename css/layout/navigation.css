@@ -8,3 +8,20 @@ header nav {
 header nav ul {
   display: none;
 }
+
+@media (min-width: 824px) {
+  .toggle-button {
+    display: none;
+  }
+  header nav ul {
+    display: block;
+  }
+  .header-wrapper ul li {
+    display: inline-block;
+    margin: 0 1rem;
+  }
+  .header-wrapper ul li a {
+    text-decoration: none;
+    color: var(--White);
+  }
+}

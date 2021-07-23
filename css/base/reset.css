@@ -129,13 +129,8 @@ table {
   border-spacing: 0;
 }
 
-html {
-  font-family: sans-serif;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: "Alata";
+  font-family: "Alata", sans-serif;
   font-size: 0.93rem;
   background-color: #ffecfd;
 }
