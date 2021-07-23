@@ -18,10 +18,22 @@ header nav ul {
   }
   .header-wrapper ul li {
     display: inline-block;
+    position: relative;
     margin: 0 1rem;
+    padding-bottom: 0.5rem;
   }
   .header-wrapper ul li a {
     text-decoration: none;
     color: var(--White);
+  }
+  .header-wrapper ul li a:hover::after {
+    display: block;
+    position: absolute;
+    content: "";
+    left: 1.1rem;
+    bottom: 0;
+    width: 1.2rem;
+    height: 0.13rem;
+    background-color: var(--White);
   }
 }
