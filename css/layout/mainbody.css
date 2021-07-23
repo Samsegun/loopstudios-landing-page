@@ -116,6 +116,9 @@ main h2 {
       0 100%
     );
   }
+  .creations {
+    margin: 8rem 0;
+  }
   .creations-images .mobile {
     display: none;
   }
@@ -123,6 +126,21 @@ main h2 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
+  }
+}
+
+@media (min-width: 737px) {
+  .creations {
+    position: relative;
+  }
+  .creations-seeall {
+    position: absolute;
+    top: -1.8rem;
+    right: -3rem;
+    width: 40%;
+  }
+  main h2 {
+    text-align: initial;
   }
 }
 
