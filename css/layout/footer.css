@@ -32,10 +32,37 @@ footer {
   text-decoration: none;
   color: inherit;
   font-size: 1rem;
+  position: relative;
+  padding-bottom: 0.5rem;
 }
 
-.f-wrapper .f-socials__icons svg {
-  margin: 0 0.5rem;
+.f-wrapper nav li a:hover::after {
+  display: block;
+  position: absolute;
+  content: "";
+  left: 1.1rem;
+  bottom: 0;
+  width: 1.2rem;
+  height: 0.13rem;
+  background-color: var(--White);
+}
+
+.f-wrapper .f-socials__icons a {
+  margin: 0 1rem;
+  position: relative;
+  padding-bottom: 0.3rem;
+}
+
+.f-wrapper .f-socials__icons a:hover::after {
+  display: block;
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 0.13rem;
+  background-color: var(--White);
 }
 
 .f-wrapper .f-socials__copyright {
