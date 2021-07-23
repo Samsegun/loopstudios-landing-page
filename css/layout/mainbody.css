@@ -80,20 +80,25 @@ main h2 {
   z-index: 1;
 }
 
-.creations-seeall h3 {
-  text-transform: uppercase;
+.creations-seeall {
   text-align: center;
-  width: 50%;
-  margin: 2rem auto;
-  border: 2px solid var(--Very-Dark-Gray);
-  font-size: 1.3rem;
-  padding: 0.8rem;
-  letter-spacing: 0.5rem;
+  margin: 3rem;
+  text-transform: uppercase;
 }
 
 .creations-seeall h3 a {
   text-decoration: none;
   color: inherit;
+  font-size: 1.3rem;
+  letter-spacing: 0.5rem;
+  border: 2px solid var(--Very-Dark-Gray);
+  padding: 0.5rem 1rem;
+}
+
+.creations-seeall h3 a:hover {
+  background-color: var(--Black);
+  color: var(--White);
+  border: none;
 }
 
 @media (min-width: 672px) {
@@ -134,17 +139,13 @@ main h2 {
   .creations {
     position: relative;
   }
-  .creations-seeall {
+  .creations-seeall h3 a {
     position: absolute;
-    top: -3rem;
-    right: -3rem;
-    width: 40%;
+    top: -0.69rem;
+    right: 0;
   }
   .creations-header h2 {
     text-align: initial;
-  }
-  .creations-seeall h3 {
-    width: 40%;
   }
 }
 
