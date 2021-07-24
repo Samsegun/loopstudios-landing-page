@@ -4,7 +4,7 @@
   height: 100vh;
   background: rgba(0, 0, 0, 0.5);
   z-index: 3;
-  animation: fluctuate 300ms ease;
+  animation: cruise 400ms ease-in-out;
 }
 
 .toggle-button {
@@ -49,7 +49,7 @@
   height: 100vh;
   background: var(--Black);
   z-index: 4;
-  animation: slide-in 300ms ease alternate;
+  animation: slide-in 300ms ease;
 }
 
 .mobile-nav-wrapper {
@@ -72,7 +72,7 @@
   background: none;
   border: none;
   color: inherit;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .mobile-nav__header button:hover {
@@ -113,7 +113,7 @@
   display: none;
 }
 
-@keyframes fluctuate {
+@keyframes cruise {
   from {
     background: rgba(0, 0, 0, 0);
   }
@@ -122,9 +122,18 @@
   }
 }
 
+@keyframes fluctuate-out {
+  from {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  to {
+    background: rgba(0, 0, 0, 0);
+  }
+}
+
 @keyframes slide-in {
   from {
-    width: 0vw;
+    width: 0;
   }
   to {
     width: 80vw;
