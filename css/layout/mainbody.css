@@ -57,6 +57,7 @@ main h2 {
 
 .creations-images__img {
   position: relative;
+  z-index: 0;
 }
 
 .creations-images__img:after {
@@ -66,18 +67,35 @@ main h2 {
   top: 0;
   width: 100%;
   height: 100%;
-  display: inline-block;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 10%, transparent);
+}
+
+.creations-images__img .over-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 1.5rem;
+  font-family: var(--josefin-sans);
+  color: var(--White);
+  z-index: 2;
 }
 
 .creations-images__img h2 {
   position: absolute;
   bottom: 0;
-  font-size: 1.5rem;
-  font-family: var(--josefin-sans);
-  color: var(--White);
-  padding: 0 1rem;
-  z-index: 1;
+  padding: 0 1.5rem;
+}
+
+.creations-images__img .over-image:hover {
+  background: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0.5) 100%,
+    transparent
+  );
+  cursor: pointer;
+  color: var(--Black);
 }
 
 .creations-seeall {
@@ -103,7 +121,7 @@ main h2 {
 
 @media (min-width: 672px) {
   main {
-    width: 80%;
+    width: var(--desktop-width);
   }
   .mobile {
     display: none;
