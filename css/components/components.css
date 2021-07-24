@@ -4,6 +4,7 @@
   height: 100vh;
   background: rgba(0, 0, 0, 0.5);
   z-index: 3;
+  animation: fluctuate 300ms ease;
 }
 
 .toggle-button {
@@ -48,6 +49,7 @@
   height: 100vh;
   background: var(--Black);
   z-index: 4;
+  animation: slide-in 300ms ease alternate;
 }
 
 .mobile-nav-wrapper {
@@ -109,6 +111,24 @@
 
 .close {
   display: none;
+}
+
+@keyframes fluctuate {
+  from {
+    background: rgba(0, 0, 0, 0);
+  }
+  to {
+    background: rgba(0, 0, 0, 0.5);
+  }
+}
+
+@keyframes slide-in {
+  from {
+    width: 0vw;
+  }
+  to {
+    width: 80vw;
+  }
 }
 
 @media (min-width: 32rem) {
