@@ -6,3 +6,5 @@ Built with
 - flexbox
 - css grid
 - mobile-first workflow
+- https://bennettfeely.com/clippy/ for clipping images
+- vanilla js
