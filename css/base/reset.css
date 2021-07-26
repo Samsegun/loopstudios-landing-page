@@ -133,11 +133,14 @@ body {
   font-family: "Alata", sans-serif;
   font-size: 0.93rem;
   background-color: #ffecfd;
+}
+
+#content {
   max-width: 90rem;
 }
 
 @media (min-width: 90rem) {
-  body {
+  #content {
     width: 80%;
     margin: 0 auto;
   }
