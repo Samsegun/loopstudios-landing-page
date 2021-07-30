@@ -2,6 +2,11 @@ header {
   background: url(../../images/mobile/image-hero.jpg) center/cover;
   position: relative;
   min-height: 41rem;
+  z-index: 1;
+}
+
+.head-bg {
+  display: none;
 }
 
 .header-wrapper {
@@ -22,34 +27,62 @@ header {
   border: 2px solid var(--White);
 }
 
-@media (min-width: 535px) {
+@media (min-width: 34rem) {
   .header-info {
     line-height: 1.2;
-    font-size: 2.7rem;
+    font-size: 2.9rem;
+  }
+}
+
+@media (min-width: 34rem) and (max-width: 57rem) {
+  .header-info {
+    width: 70%;
   }
 }
 
 @media (min-width: 58rem) {
   header {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 15%, transparent),
-      url(../../images/desktop/image-hero.jpg) left 0 top 0 / contain no-repeat;
-    margin-bottom: -10rem;
+    background: none;
+    position: relative;
+    min-height: auto;
   }
+  .head-bg {
+    display: block;
+    position: relative;
+  }
+
+  .head-bg::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.4) 100%, transparent);
+  }
+
+  .head-bg-img {
+    width: 100%;
+  }
+
   .header-wrapper {
     width: var(--desktop-width);
+    position: absolute;
+    min-height: auto;
+    height: 100%;
+    top: 0;
+    left: 10%;
+    right: 10%;
   }
+
   .header-info {
-    margin-bottom: 3rem;
-    width: 40%;
+    bottom: 20%;
+    font-size: 3.5rem;
   }
 }
 
-@media (min-width: 64rem) {
-  header {
-    margin-bottom: -3rem;
-  }
-
+@media (min-width: 58rem) and (max-width: 65rem) {
   .header-info {
-    margin-bottom: 0;
+    bottom: 10%;
   }
 }

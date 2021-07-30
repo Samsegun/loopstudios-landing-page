@@ -1,7 +1,7 @@
 main {
   width: 90%;
-  min-height: calc(100vh - 41rem - 30rem);
-  margin: 0 auto;
+  /* min-height: calc(100vh - 41rem - 30rem); */
+  margin: 1rem auto;
 }
 
 main img {
@@ -172,6 +172,7 @@ main h2 {
   .interactive-sec {
     display: block;
     position: relative;
+    margin-top: 2rem;
   }
   .interactive-sec__img {
     width: 65%;

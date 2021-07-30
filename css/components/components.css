@@ -25,6 +25,7 @@
   height: 100vh;
   background: var(--Black);
   z-index: 4;
+  transition: animation 400ms ease;
   animation: slide-in 400ms ease;
 }
 
